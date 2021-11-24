@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 import axios from "axios";
+import "./Weather.css";
+import Information from "./Information";
+import Forecast from "./Forecast";
 
 
 export default function Weather(props){
@@ -48,8 +51,7 @@ export default function Weather(props){
                                 </div>
                     </div>
                 </form>
-                <Information data={weatherData}/>
-                <Forecast coordinates={weatherData.coordinates}/>
+               
                 <footer>
                     This project was coded by Andrea Hitchin and is 
                     <a href="https://github.com/00Dre00/weather-search-react" target="_blank">
