@@ -3,9 +3,11 @@ font-family:arial,sans-serif;
 padding:18px;
 margin:30px auto;
 border-radius:4px;
+ background: linear-gradient(70deg, rgb(149, 67, 204), rgb(32, 136, 221));
 }
 
 .Weather form{margin-bottom:24px;}
+
 
 .Weather h1{color:black;
 display:block;
@@ -13,6 +15,19 @@ font-size:38px;
 font-weight:bold;
 line-height:26px;
 margin-bottom:24px ;}
+
+.Weather .temperature{font-weight:bold;
+    color:darkorange;
+    margin-left:10px;
+font-size:60px;}
+
+.Weather .unit{position:relative;
+font-size:28px;
+color:darkorange;
+line-height:34px;
+font-weight:normal;
+line-height:1;
+top:-34px;}
 
 .Weather ul{margin:0;
 padding:0;}
@@ -22,5 +37,12 @@ font-weight:100;
 line-height:20px;
 color:rgb(255, 255, 0);
 list-style:none;}
+
+
+.Weather .btn{background:red;
+    color:rgb(0, 0, 0);
+}
+
+.Weather footer a{color:rgb(255, 0, 157)}
 
 

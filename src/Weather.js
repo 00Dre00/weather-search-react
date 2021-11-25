@@ -44,7 +44,7 @@ export default function Weather(props){
                 <form onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-9">
-                            <input type="search" placeholder="Search for city" className="form-control search-input" onChange={handleCityChange}/>
+                            <input type="search" placeholder="Search for city" className="form-control search-input" autoFocus="on" onChange={handleCityChange}/>
                             </div>
                             <div className="col-3">
                                 <input type="submit" value="Search" className="btn btn-primary"/>
@@ -53,18 +53,17 @@ export default function Weather(props){
                 </form>
                <Information data={weatherData}/>
                <Forecast coordinates={weatherData.coordinates}/>
+               
+               <footer>
+    This project was coded by Andrea Hitchin and is
+    <a href="https://github.com/00Dre00/weather-search-react" target="_blank">
+        open-sourced on GitHub
+    </a>
+</footer>
 
-
-                <footer>
-                This project was coded by Andrea Hitchin and is 
-                <a href="https://github.com/00Dre00/weather-search-react" target="_blank">
-                    open-sourced on GitHub
-                </a>
-            </footer>
             </div>
 
         );
     }
-
     else{search(); return"Loading...";}
 }
