@@ -11,23 +11,23 @@ export default function Information (props){
                     <h1>{props.data.city}</h1>
                     <ul>
                         <li>
-                            <Date date={props.data.date}/>,{props.data.description}
+                            <Date date={props.data.date}/>, {props.data.description}
                         </li>
                         <li>
-                            Humidity:{props.date.humidity}%, Wind:{""}
-                            {props.data.wind}km/h
+                            Humidity:{props.data.humidity}%, 
+                            Wind:{props.data.wind}km/h
                         </li>
                     </ul>
                 </div>
                 <div className="col-6">
                     <div className="temperature-container d-flex justify-content-end">
-                        <WeatherIcon code={props.data.icon} />
+                        <WeatherIcon code={props.data.icon} size={52} />
 
                         <div>
                             <span className="temperature">
                                 {Math.round(props.data.temperature)}
                             </span>
-                            <span className="unit">&#176;</span>
+                            <span className="unit">&#176;C</span>
                         </div>
                     </div>
                 </div>

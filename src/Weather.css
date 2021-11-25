@@ -1,1 +1,26 @@
-.Weather{background:linear-gradient(60deg rgb(138, 2, 138),rgb(78, 78, 247))}
+.Weather{border:2px solid red;
+font-family:arial,sans-serif;
+padding:18px;
+margin:30px auto;
+border-radius:4px;
+}
+
+.Weather form{margin-bottom:24px;}
+
+.Weather h1{color:black;
+display:block;
+font-size:38px;
+font-weight:bold;
+line-height:26px;
+margin-bottom:24px ;}
+
+.Weather ul{margin:0;
+padding:0;}
+
+.Weather li{font-size:18px;
+font-weight:100;
+line-height:20px;
+color:rgb(255, 255, 0);
+list-style:none;}
+
+
