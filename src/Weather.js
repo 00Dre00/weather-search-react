@@ -53,10 +53,10 @@ export default function Weather(props){
                 </form>
                <Information data={weatherData}/>
                <Forecast coordinates={weatherData.coordinates}/>
-               
+
                <footer>
     This project was coded by Andrea Hitchin and is
-    <a href="https://github.com/00Dre00/weather-search-react" target="_blank">
+    <a href="https://github.com/00Dre00/weather-search-react" target="_blank" rel="noreferrer">
         open-sourced on GitHub
     </a>
 </footer>
