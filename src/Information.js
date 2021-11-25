@@ -21,7 +21,8 @@ export default function Information (props){
                 </div>
                 <div className="col-6">
                     <div className="temperature-container d-flex justify-content-end">
-                        <WeatherIcon code={props.data.icon} size={32}/>
+                        <WeatherIcon code={props.data.icon} />
+
                         <div>
                             <span className="temperature">
                                 {Math.round(props.data.temperature)}
